@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@utility font-bebas {
+  font-family: 'Bebas Neue', cursive;
+}
+
+@utility font-mono {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #E50914;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+background: #1e1e1e; /* dark grey */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(180deg, #ff6b6b, #f06595);
+border-radius: 10px;
+}
