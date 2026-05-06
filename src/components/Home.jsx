@@ -26,7 +26,7 @@ const Home = () => {
       if (!query || query.trim().length < 2) return; // optional safety
     
       try {
-        const res = await axios.post(`${process.env.BACKEND_URL}/search`, {
+        const res = await axios.post(`${process.env.VITE_BACKEND_URL}/search`, {
           search: query
         });
         setOutSongs(res.data.searchedOutput);
