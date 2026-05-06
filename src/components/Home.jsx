@@ -26,7 +26,6 @@ const Home = () => {
       if (!query || query.trim().length < 2) return; // optional safety
     
       try {
-        console.log(import.meta.env.VITE_BACKEND_URL);
         const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/search`, {
           search: query
         });
@@ -50,7 +49,7 @@ const Home = () => {
 
 
     const handleSongClick = async (songName) => {
-      const res = await axios.post(`${process.env.BACKEND_URL}/recommend`, {songName: songName});
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/recommend`, {songName: songName});
       console.log("han chal gaya")
       setRecomendation(res.data.recommendation);
       console.log(res.data.recommendation)
